@@ -22,11 +22,15 @@ public class Application {
         try {
             number = 10 / 1;
             String name = null;
-            System.out.println(name.length());
+//            System.out.println(name.length());
+            List<Object> emptyList = Collections.emptyList();
+            emptyList.add(new Object());
         } catch (ArithmeticException e) {
             System.out.println("Operation divide by zero not supported");
         } catch (NullPointerException e){
             System.out.println("NullPointerException");
+        } catch (Exception e){
+            System.out.println("Exception");
         }
         System.out.println(number);
 
